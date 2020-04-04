@@ -7,5 +7,5 @@ do
 done	
  
 a='ifconfig wlan0 | grep broadcast'
-python3 /home/pi/pycode/email_IP_qq.py "wlan0:$a"
+python3 /home/pi/pycode/email_IP_Gmail.py "wlan0:$a"
 echo "ok"
