@@ -1,0 +1,40 @@
+﻿sudo apt-get install realvnc-vnc-server
+
+sudo apt-get install realvnc-vnc-viewer
+
+creat internet connection shortcut on desktop
+Explorer.exe ::{7007ACC7-3202-11D1-AAD2-00805FC1270E}
+
+
+wifi、蓝牙、xbee，当然你也可以433电波、超声、红外
+
+
+arp -a   to open the internaet address
+
+
+mount exFat disk
+
+sudo apt-get update
+sudo apt-get install exfat-fuse exfat-utils
+sudo mkdir /media/exfat
+sudo mount -t auto /dev/sda1 /media/USBHDD1
+
+WIFI connection setting
+sudo gedit /etc/wpa_supplicant/wpa_supplicant.conf
+
+network={
+	ssid="TP-Link_14F3"
+	psk="93705134"
+	key_mgmt=WPA-PSK
+	priority = 10
+}
+
+install git on RPI
+sudo apt update
+sudo apt install git
+
+
+debug the wpa_supplicant by these command
+
+sudo killall wpa_supplicant
+sudo wpa_supplicant -c/etc/wpa_supplicant/wpa_supplicant.conf -iwlan0 -d
