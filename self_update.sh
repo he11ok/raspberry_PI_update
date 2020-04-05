@@ -34,4 +34,4 @@ cd ..
 
 
 cd ~ 
-python3 /home/pi/self_update/on_board/raspberry_PI_update0/email_IP_Gmail_func.py 'hanlimu111' 'hanlimu11' 'wesqwr28'
+python3 /home/pi/self_update/on_board/raspberry_PI_update0/email_IP_Gmail_func.py 'receiver_name' 'user_name' 'password'
