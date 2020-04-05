@@ -54,7 +54,9 @@ receiver = sys.argv[1]
 sender_account = sys.argv[2]
 psk = sys.argv[3]
 
-print('To :  ' + receiver + '@gmail.com\n')
-print('From:  ' + sender_account + '@gmail.com\n')
-print('Authority Password: ' + psk)
+print('Sending the IP address by Gmail ...')
+print('To :  ' + receiver + '@gmail.com')
+print('From:  ' + sender_account + '@gmail.com')
+print('Authority Password: ' + '*'*len(psk))
 send_email(receiver,sender_account,psk)
+print('done')
