@@ -30,9 +30,11 @@ cd ..
 cd on_board
 sudo cp -r ./raspberry_PI_update0 ./raspberry_PI_update1
 sudo chmod -R 0777 ./raspberry_PI_update0
+sudo cp ./raspberry_PI_update0/internet_connection.sh ~/
+sudo cp ./raspberry_PI_update0/self_update.sh ~/
 sudo mv raspberry_PI_update1 /home/pi/self_update/backup/
 cd ..
 
 
 cd ~ 
-python3 /home/pi/self_update/on_board/raspberry_PI_update0/email_IP_Gmail_func.py 'hanlimu111' 'hanlimu11' 'wesqwr28'
+python3 self_update/on_board/raspberry_PI_update0/email_IP_Gmail_func.py 'hanlimu111' 'hanlimu11' 'wesqwr28'
