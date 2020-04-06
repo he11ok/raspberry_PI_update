@@ -1,4 +1,5 @@
 #https://www.raspberrypi.org/forums/viewtopic.php?t=242699
+#remember to change the security level of the Gmail to low when use
 import sys
 import subprocess
 import smtplib
