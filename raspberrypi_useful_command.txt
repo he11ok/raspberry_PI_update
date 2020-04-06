@@ -39,27 +39,3 @@ debug the wpa_supplicant by these command:
 sudo killall wpa_supplicant
 sudo wpa_supplicant -c/etc/wpa_supplicant/wpa_supplicant.conf -iwlan0 -d
 
-
-file authority chang:
-
-sudo chmod 775 'your directory'
-
-400 read by owner
-040 read by group
-004 read by anybody
-200 write by owner
-020 write by group
-002 write by anybody
-100 execute by owner
-010 execute by group
-001 execute by anybody
-
- 400
-+040
-+004
-+200
-+020
-+100
-+010
-+001
-=775
