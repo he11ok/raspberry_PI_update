@@ -1,8 +1,11 @@
+import os
 import socket
 
 def self_update():
     print('self_update command reviced\n'\
           +'The RPI is downloading the codes from Github and try to run them ...\n')
+    status = os.system('bash ~/self_update.sh')
+    #print(status)
     
 def random_walk():
     print('random_walk command is received\n'\
