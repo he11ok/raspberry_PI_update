@@ -3,9 +3,10 @@ import socket
 
 def self_update():
     print('self_update command reviced\n'\
-          +'The RPI is downloading the codes from Github and try to run them ...\n')
-    #status = os.system('bash ~/self_update.sh')
-    #print(status)
+          + 'The RPI is downloading the codes from Github and try to run them ...\n')
+    #when try to modify the code remember to comment the self_update.sh
+    status = os.system('bash ~/self_update.sh')
+    print(status)
     
 def random_walk():
     print('random_walk command is received\n'\
@@ -17,11 +18,15 @@ def state_report():
     
 def command_exe(command):
     #command dictionary, use comma to seperate
+    return\
     {
-        'self_update':self_update(),
-        'random_walk':random_walk(),
-        'state_report':state_report()
-    }[command]
+        'self_update':self_update,\
+        'random_walk':random_walk,\
+        'state_report':state_report
+    }[command]()
+    #here the () is very important to be outside,
+    #or each funciton in the dict will be called when construct the dict
+
 
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -34,6 +39,7 @@ while True:
     if rcv_data == 'close':
         print('close the receiver\n')
         break
+    
     if ('CMD:bristol ' in rcv_data):
         #attention the CMD:bristol followed by a space
         command = rcv_data.lstrip('CMD:bristol')
@@ -41,8 +47,10 @@ while True:
         command = command.rstrip()
         print('recive command level message---> Command: %s' % command)
         command_exe(command)
+        continue
     
 #self_update()
 #random_walk()
 #state_report()
 s.close()
+
