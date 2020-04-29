@@ -1,3 +1,4 @@
+#!/bin/bash
 cd ~
 sudo mkdir -p /home/pi/self_update
 
@@ -33,6 +34,10 @@ sudo chmod -R 0777 ./raspberry_PI_update0
 sudo cp ./raspberry_PI_update0/internet_connection.sh ~/
 sudo cp ./raspberry_PI_update0/self_update.sh ~/
 sudo mv raspberry_PI_update1 /home/pi/self_update/backup/
+
+#mv self_update out
+#cd raspberry_PI_update0
+#sudo mv self_update.sh /home/pi
 cd ..
 
 
