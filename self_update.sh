@@ -42,4 +42,5 @@ cd ..
 
 
 cd ~ 
+#between '' are receiver account, sender account and password
 python3 self_update/on_board/raspberry_PI_update0/email_IP_Gmail_func.py 'hanlimu111' 'hanlimu11' '********'
