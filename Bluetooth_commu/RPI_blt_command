@@ -1,0 +1,18 @@
+bluetooth physical address:
+RPI_ble1 DC:A6:32:69:CC:94
+RPI_ble2 DC:A6:32:2A:13:51
+
+
+sudo btmon | grep RSSI
+
+
+With another PRI discoverable, use this to get the signal strength
+hcitool rssi 
+
+Assumption:
+seems that the hcitool can only use when the blt device is discoverable 
+but the bluetoothctl scan can catch any bluetooth signal ??? Is'n it ??
+
+
+To show the device name or change the device name for hci
+sudo hciconfig hci0 name 'new name'
