@@ -8,3 +8,5 @@ sudo btmon | grep RSSI
 
 With another PRI discoverable, use this to get the signal strength
 hcitool rssi 
+
+
