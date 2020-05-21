@@ -1,0 +1,10 @@
+bluetooth physical address:
+RPI_ble1 DC:A6:32:69:CC:94
+RPI_ble2 DC:A6:32:2A:13:51
+
+
+sudo btmon | grep RSSI
+
+
+With another PRI discoverable, use this to get the signal strength
+hcitool rssi 
