@@ -12,3 +12,7 @@ hcitool rssi
 Assumption:
 seems that the hcitool can only use when the blt device is discoverable 
 but the bluetoothctl scan can catch any bluetooth signal ??? Is'n it ??
+
+
+To show the device name or change the device name for hci
+sudo hciconfig hci0 name 'new name'
