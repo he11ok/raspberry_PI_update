@@ -18,7 +18,8 @@ for n in range(sample_num):
     str_rssi = b_rssi.decode('ascii')
     #if require the sign of the value, add \W
     #rssi = re.findall(r'\d+\.?\d*',str_rssi)
-    rssi = re.findall(r'?\W\d+\.?\d*',str_rssi)    tp = type(rssi)
+    rssi = re.findall(r'?\W\d+\.?\d*',str_rssi)    
+    tp = type(rssi)
     #print(rssi)
     #print(tp)
     all_RI += rssi
