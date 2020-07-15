@@ -37,9 +37,43 @@ network={
 
 	# Set priority to a big number
 	priority=999
-  
-}
-  
+
+	# --- DONT CHANGE THE REST OF THIS BLOCK --
+
+	# Enable this network block
+	disabled=0
+
+	# eduroam please
+        ssid="eduroam"
+
+	# SSID should be broadcast, so don't scan.
+	scan_ssid=0
+
+	# Infrastructure mode
+	mode=0
+
+	# WPA/WPA2 require OPEN
+	auth_alg=OPEN
+
+	# WPA and WPA2 (RSN) are both used for eduroam 
+	# (depending on which organisation you are at)
+	# In the future 'WPA' can be removed (WPA2 only).
+	proto=WPA RSN
+
+	# CCMP (AES) is stronger, but some organisations use TKIP.
+	# In the future 'TKIP' can be removed.
+	pairwise=CCMP TKIP
+
+	# Use EAP
+        key_mgmt=WPA-EAP
+
+	# Use PMKSA caching
+        proactive_key_caching=1
+
+}  
+
+
+
 Setting up WICD
 To use WICD, you need to create a suitable template and then activate it.
 
