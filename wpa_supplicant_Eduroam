@@ -1,3 +1,5 @@
+https://medium.com/@celikemirhan/how-can-you-connect-eduroam-wi-fi-with-raspberry-pi-8f704e6fa7f6
+
 network={
 	# --- MUST CONFIGURE THE FOLLOWING THREE OPTIONS --
 
@@ -36,7 +38,7 @@ network={
 	# Set priority to a big number
 	priority=999
   
-  
+}
   
 Setting up WICD
 To use WICD, you need to create a suitable template and then activate it.
