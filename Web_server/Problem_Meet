@@ -3,3 +3,19 @@
 2.找到这一行#LoadModule php7_module libexec/apache2/libphp7.so，把前面的#去掉，这里根据电脑里不同的php版本，php7_module这里可能有所变化
 
 3.在终端输入命令：sudo apachectl k restart 重启apache服务
+
+
+
+I have faced the same problem and Here is the solution:
+
+You have to install an additional package:
+
+sudo apt-get install libapache2-mod-php7.0
+Now run
+
+sudo a2enmod php7.0
+to enable it
+
+Restart the server
+
+sudo systemctl restart apache2.service
