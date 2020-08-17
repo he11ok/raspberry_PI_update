@@ -1,0 +1,15 @@
+<?php
+$mysqli = new mysqli("127.0.0.1","root","970111")
+
+if(!$mysqli){
+  echo"database error";
+  }
+  else
+  {
+  echo "connection successfully!"
+  }
+
+$mysqli->close();
+
+?>
+
