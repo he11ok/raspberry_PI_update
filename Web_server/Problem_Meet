@@ -45,3 +45,8 @@ now. Please change the bind parameter there and remove anything you placed in /e
 
 How to remote access the mysql database
 https://www.digitalocean.com/community/tutorials/how-to-allow-remote-access-to-mysql
+
+
+Problem：Tab not completion in mysql
+
+add [mysql] auto-rehash in my.cnf
