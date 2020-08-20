@@ -1,3 +1,13 @@
+Linux通过网线共享本机无线网络：
+
+首先通过网线将一台有无线网卡、已经连接无线网络的设备和一台需要网络连接的设备相连接
+
+终端中输入:
+
+nm-connection-editor
+然后在网络连接中的“以太网”选择修改，将IPV4目录下的“方法”修改为“与其他网络共享”即可。
+
+
 1.在/etc/apache2目录下找到并打开httpd.conf文件
 
 2.找到这一行#LoadModule php7_module libexec/apache2/libphp7.so，把前面的#去掉，这里根据电脑里不同的php版本，php7_module这里可能有所变化
