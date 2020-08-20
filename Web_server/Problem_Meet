@@ -29,3 +29,9 @@ to enable it
 Restart the server
 
 sudo systemctl restart apache2.service
+
+
+
+用树莓派远程登录Linux主机建立的mysql服务：
+
+https://www.jianshu.com/p/8fc90e518e2c
