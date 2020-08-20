@@ -50,3 +50,16 @@ https://www.digitalocean.com/community/tutorials/how-to-allow-remote-access-to-m
 Problem：Tab not completion in mysql
 
 add [mysql] auto-rehash in my.cnf
+
+To enable autocomplete within the MySQL prompt type:
+
+mysql> \#
+or
+mysql> rehash
+
+After that you can type:
+
+mysql> describe someTableW[TAB]
+To get:
+
+mysql> describe someTableWithRidiculousLongName
