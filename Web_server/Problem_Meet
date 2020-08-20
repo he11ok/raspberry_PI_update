@@ -42,3 +42,6 @@ Proble：cant find the bind-address in my.cnf
 They changed the MySQL package so that the bind parameter is in 
 /etc/mysql/mysql.conf.d/mysqld.cnf 
 now. Please change the bind parameter there and remove anything you placed in /etc/mysql/conf.d/mysql.cnf.
+
+How to remote access the mysql database
+https://www.digitalocean.com/community/tutorials/how-to-allow-remote-access-to-mysql
