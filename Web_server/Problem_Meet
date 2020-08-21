@@ -63,3 +63,6 @@ mysql> describe someTableW[TAB]
 To get:
 
 mysql> describe someTableWithRidiculousLongName
+
+How to return the search result from mysqli
+https://www.php.net/manual/zh/mysqli.query.php
