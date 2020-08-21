@@ -44,6 +44,9 @@ They changed the MySQL package so that the bind parameter is in
 now. Please change the bind parameter there and remove anything you placed in /etc/mysql/conf.d/mysql.cnf.
 
 How to remote access the mysql database
+
+mysql -u username -h mysql_server_ip -P 3306 -p
+
 https://www.digitalocean.com/community/tutorials/how-to-allow-remote-access-to-mysql
 
 
