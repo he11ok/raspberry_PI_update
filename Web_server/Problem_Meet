@@ -69,3 +69,6 @@ mysql> describe someTableWithRidiculousLongName
 
 How to return the search result from mysqli
 https://www.php.net/manual/zh/mysqli.query.php
+
+Apache ufw setting    firewall
+https://www.tecmint.com/setup-ufw-firewall-on-ubuntu-and-debian/
