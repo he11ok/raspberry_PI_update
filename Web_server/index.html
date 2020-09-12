@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+Welome to RPI robot control panel<br>
+<br>
+
+<head>
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+</body><br><br>
+
+
+
+
+<!--
+<a href="/phpinfo.php">
+	<button>check php</button>
+</a><br><br>
+-->
+<a href="/testmysql.php">
+	<button>check mysql connection</button>
+</a><br><br>
+
+<!--
+<a href="/show_ip_table.php">
+	<button>Show database</button>
+</a><br><br>
+-->
+
+<a href="/show_ip_table2.php">
+<!--<a href="/show_table_values.php">-->
+	<button>Show database</button>
+</a><br><br>
+
+
+<a href="/index.php">
+	<button>Write IP(not completed)</button>
+</a><br><br>
+
+<a href="/index.php">
+	<button>Random Walk(not completed)</button>
+</a><br><br>
+
+
+<a href="/index.php">
+	<button>Website design note</button>
+</a><br><br>
+
+
+
