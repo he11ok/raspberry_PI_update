@@ -5,7 +5,7 @@ import re
 import numpy as np
 
 dist = '1m'
-sample_num = 20
+sample_num = 100
 RPI_addr = 'DC:A6:32:2A:13:51'
 all_RI = []
 
@@ -13,7 +13,7 @@ f = open('test_rssi_'+dist+'.txt','w')
 f.write('RSSI test at ' + dist +'\n')
 
 for n in range(sample_num):
-    time.sleep(0.1)
+    time.sleep(0.01)
     b_rssi = subprocess.check_output('sudo hcitool rssi ' + RPI_addr ,shell = True)
     str_rssi = b_rssi.decode('ascii')
     #if require the sign of the value, add \W
