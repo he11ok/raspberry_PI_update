@@ -16,3 +16,5 @@ but the bluetoothctl scan can catch any bluetooth signal ??? Is'n it ??
 
 To show the device name or change the device name for hci
 sudo hciconfig hci0 name 'new name'
+
+/etc/bluetooth/main.conf
